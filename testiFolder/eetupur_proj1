@@ -1,0 +1,51 @@
+##########seuaraavat toiminnot##############
+3. yleinen projekti komento
+4. react
+5. quarkus
+6. maven asennus
+7. esiasetusten tarkistus
+
+
+
+
+##################toivomuksia###############
+json config systeemi envien sijaan
+
+projektit ~/.meta-proj-cli/projekts/[project] pathiin
+
+
+tilaton = vaihe tarkastetaan muualta kuin local file => github
+salaiset ainoastaan paikallisena, git kansion ulkopuolella
+jokainen komento lisää jotain asetuksiin (deduktoi mitä lisätty)
+
+
+komennot tarkastavat, voidaanko ne ajaa (new-repo tarkastaa onko git ja gh cli)
+
+
+
+###############tarkennuksia##############
+
+nimi -> gh -> minkälainen proj
+
+onko maven? -> mavenin asennus 
+
+
+react , komennon käskyttäminen npx
+
+quarkus, haluttanko java vai kotlin, maven vai gradle
+
+
+
+
+
+#############lepän vinkkejä################
+
+mvn io.quarkus:quarkus-maven-plugin:1.10.5.Final:create \
+    -DprojectGroupId=org.acme \
+    -DprojectArtifactId=rest-kotlin-quickstart \
+    -DclassName="org.acme.rest.GreetingResource" \
+    -Dpath="/greeting" \
+    -Dextensions="kotlin,resteasy-jackson"
+    -DbuildTool=gradle'
+    
+https://quarkus.io/get-started/
